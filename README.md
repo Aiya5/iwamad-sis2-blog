@@ -1,32 +1,21 @@
-# React + TypeScript + Vite
+# Aiya's Blog — SIS 2
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A small blog built with React, TypeScript, and React Router.
 
-Currently, two official plugins are available:
+Pages: https://aiya5.github.io/iwamad-sis2-blog/
+Tests: Test Files  2 passed (2), Tests  3 passed (3)
+Protected: /protected
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About
 
-## React Compiler
+Five posts about what I've been learning in my web development course — React Router, Context, testing, Figma handoffs, and form validation. Each post has a like button. The app also has a protected page that only shows when signed in.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Routes
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+- `/` — Home
+- `/posts` — Posts list
+- `/posts/:postId` — Single post
+- `/contact` — Contact
+- `/signin` — Sign in
+- `/protected` — Protected page (only when signed in)
+- `*` — 404 page
