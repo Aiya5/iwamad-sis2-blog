@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router";
 import { posts } from "../data/posts";
 import Tag from "../components/ui/Tag";
+import PostLike from "../components/PostLike";
 
 function PostDetailPage() {
   const { postId } = useParams();
@@ -26,7 +27,10 @@ function PostDetailPage() {
         ))}
       </div>
       <p>{post.body}</p>
-      <Link to="/posts">← Back to posts</Link>
+      <PostLike />
+      <p>
+        <Link to="/posts">← Back to posts</Link>
+      </p>
     </section>
   );
 }
