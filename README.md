@@ -3,7 +3,7 @@
 A small blog built with React, TypeScript, and React Router.
 
 Pages: https://aiya5.github.io/iwamad-sis2-blog/
-Tests: Test Files  2 passed (2), Tests  3 passed (3)
+Tests: Test Files 2 passed (2), Tests 3 passed (3)
 Protected: /protected
 
 ## About
